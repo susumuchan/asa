@@ -6,7 +6,7 @@ class CreateMemberImages < ActiveRecord::Migration
       t.string :content_type             # MIMEタイプ
       t.timestamps
     end
-    
+
     add_index :member_images, :member_id
   end
 end

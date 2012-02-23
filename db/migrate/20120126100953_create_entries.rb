@@ -8,7 +8,7 @@ class CreateEntries < ActiveRecord::Migration
       t.string :status, null: false, default: "draft"  # 状態
       t.timestamps
     end
-    
+
     add_index :entries, :member_id
   end
 end

@@ -15,8 +15,8 @@ gnames = ["太郎", "次郎", "花子"]
     password: "password",
     password_confirmation: "password"
   }, without_protection: true)
-  
-  fname = Rails.root.join("db/seeds/development", "member#{idx%3+1}.jpg") 
+
+  fname = Rails.root.join("db/seeds/development", "member#{idx%3+1}.jpg")
   MemberImage.create(
   { member: member,
     data: File.open(fname, "rb").read,

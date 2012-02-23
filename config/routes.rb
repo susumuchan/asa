@@ -6,7 +6,7 @@ Asagao::Application.routes.draw do
 
   resources :members, only: [:index, :show] do
     collection { get "search" }
-    
+
     resources :entries
   end
   resources :entries

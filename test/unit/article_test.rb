@@ -48,7 +48,7 @@ class ArticleTest < ActiveSupport::TestCase
       released_at: 1.days.ago, expired_at: nil)
     article5 = Factory(:article, title: "会員のみ",
       released_at: 1.days.ago, expired_at: nil, member_only: true)
-    
+
     articles = Article.readable_for(nil)
     assert_includes articles, article1, "現在の記事が含まれる"
     assert_not_includes articles, article2, "過去の記事は含まれない"

@@ -2,7 +2,7 @@
 
 class MembersController < ApplicationController
   before_filter :login_required
-  
+
   # 会員一覧
   def index
     @members = Member.order("number").
