@@ -26,7 +26,8 @@ Asagao -- ある草野球チームのブログサイト
 ダウンロード
 ------------
 
-[https://github.com/oiax/asagao] の「Downloads」リンクをクリックし、「Download as zip」リンクをクリックしてください。
+https://github.com/oiax/asagao の「Downloads」リンクをクリックし、「Download as zip」リンクをクリックしてください。
+
 ダウンロードされたファイルの名前は oiax-asagao-d874ad4.zip のような形式をしています。
 これを適当なフォルダに展開してください。
 
@@ -36,11 +37,13 @@ Asagao -- ある草野球チームのブログサイト
 
 コマンドプロンプト（ターミナル）を開き、展開されたソースコードのフォルダにcdコマンドで移動します。そして、以下のコマンドを実行してください。
 
-  bundle install
-  rake db:setup RAILS_ENV=production
+    bundle install
+    rake db:setup RAILS_ENV=production
 
 
 起動
 ----
 
-  rails s -e production
+    rails s -e production
+
+ブラウザで http://localhost:3000/ を開くと、ローカルマシン上でアプリケーションが利用できます。
